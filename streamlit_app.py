@@ -1,5 +1,5 @@
 """
-Interface Streamlit du anger-Med-AI-Assistant.
+Interface Streamlit du Tanger-Med-AI-Assistant.
 Déploiement : Streamlit Community Cloud.
 """
 import streamlit as st
@@ -47,7 +47,7 @@ def load_engine() -> RAGEngine:
 
 # ── Sidebar ───────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.title("🔍 anger-Med-AI-Assistant")
+    st.title("🔍 Tanger-Med-AI-Assistant")
     st.markdown(
         """
         Posez vos questions sur la base documentaire.
@@ -64,7 +64,7 @@ with st.sidebar:
         st.rerun()
 
 # ── Titre principal ───────────────────────────────────────────────────────
-st.title("💬 Assistant Documentaire")
+st.title("💬 Assistant documentaire de Tanger Med")
 st.caption("Interrogez vos documents en langage naturel")
 
 # ── Initialisation de l'historique de conversation ───────────────────────
