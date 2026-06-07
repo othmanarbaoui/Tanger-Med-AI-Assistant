@@ -1,13 +1,13 @@
 """
-Interface Streamlit du système RAG.
-Déploiement : Streamlit Community Cloud (clé API via Secrets).
+Interface Streamlit du anger-Med-AI-Assistant.
+Déploiement : Streamlit Community Cloud.
 """
 import streamlit as st
 from pathlib import Path
 
 # ── Configuration de la page ──────────────────────────────────────────────
 st.set_page_config(
-    page_title="Système RAG",
+    page_title="Tanger-Med-AI-Assistant",
     page_icon="🔍",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -25,7 +25,6 @@ def load_engine() -> RAGEngine:
     """
     Charge le vectorstore et instancie le moteur RAG.
     La clé API est lue depuis st.secrets (Streamlit Cloud)
-    ou depuis les variables d'environnement (local).
     """
     # Priorité : Streamlit Secrets → variable d'environnement
     try:
@@ -48,17 +47,17 @@ def load_engine() -> RAGEngine:
 
 # ── Sidebar ───────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.title("🔍 Système RAG")
+    st.title("🔍 anger-Med-AI-Assistant")
     st.markdown(
         """
         Posez vos questions sur la base documentaire.
 
-        **Modèle LLM** : Gemini 2.0 Flash  
+        **Modèle LLM** : gemini-3.5-flash 
         **Embedding** : multilingual-E5-large  
         **Retrieval** : MMR + Cross-Encoder Reranker  
         """
     )
-    show_sources = st.toggle("Afficher les sources", value=True)
+    show_sources = st.toggle("Afficher les sources", value=False)
     st.divider()
     if st.button("🗑️ Effacer l'historique"):
         st.session_state.messages = []
