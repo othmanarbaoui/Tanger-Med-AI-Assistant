@@ -1,8 +1,8 @@
-# 🔍 Système RAG — Assistant Documentaire
+# 🔍 Tanger-Med-AI-Assistant
 
 Interface conversationnelle pour interroger des documents PDF en langage naturel.
 
-**Stack** : LangChain · FAISS · multilingual-E5-large · Cross-Encoder · Gemini 2.0 Flash · Streamlit
+**Stack** : LangChain · FAISS · multilingual-E5-large · Cross-Encoder · gemini-3.5-flash · Streamlit
 
 ---
 
