@@ -1,6 +1,7 @@
 # 🔍 Tanger-Med-AI-Assistant
 
 Assistant documentaire intelligent basé sur le RAG pour la gestion et l'exploitation des connaissances de Tanger Med Group.
+
 **Stack** : LangChain · FAISS · multilingual-E5-large · Cross-Encoder · gemini-3.5-flash · Streamlit
 
 ---
