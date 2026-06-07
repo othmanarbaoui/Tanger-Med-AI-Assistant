@@ -35,7 +35,7 @@ streamlit_app.py          ← Interface utilisateur
 
 ```bash
 git clone https://github.com/othmanarbaoui/Tanger-Med-AI-Assistant.git
-cd rag-system
+cd Tanger-Med-AI-Assistant
 ```
 
 ### 2. Créer l'environnement Python
