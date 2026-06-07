@@ -2,7 +2,7 @@
 Utilitaires de nettoyage de texte pour les PDF.
 """
 import re
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 
 def clean_text(text: str) -> str:
