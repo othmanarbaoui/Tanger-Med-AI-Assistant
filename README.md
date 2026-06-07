@@ -8,7 +8,7 @@ Assistant documentaire intelligent basé sur le RAG pour la gestion et l'exploit
 
 ## 🚀 Démo en ligne
 
-👉 **[Ouvrir l'application](https://votre-app.streamlit.app)**
+👉 **[Ouvrir l'application](https://tanger-med-ai-assistant-mzyc68biiacwrvzoykq4ve.streamlit.app/)**
 
 ---
 
