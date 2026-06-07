@@ -30,7 +30,9 @@ def load_engine() -> RAGEngine:
     try:
         api_key = st.secrets["GOOGLE_API_KEY"]
     except (KeyError, FileNotFoundError):
+        from dotenv import load_dotenv
         import os
+        load_dotenv()
         api_key = os.getenv("GOOGLE_API_KEY", "")
 
     if not api_key:
