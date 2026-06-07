@@ -34,7 +34,7 @@ streamlit_app.py          ← Interface utilisateur
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-username/rag-system.git
+git clone https://github.com/othmanarbaoui/Tanger-Med-AI-Assistant.git
 cd rag-system
 ```
 
@@ -77,9 +77,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## ☁️ Déploiement sur Streamlit Community Cloud (gratuit)
-
-> **La clé API n'est jamais exposée** — elle est injectée via les Secrets de Streamlit Cloud.
+## ☁️ Déploiement sur Streamlit Community Cloud
 
 ### Étapes
 
@@ -103,27 +101,6 @@ streamlit run streamlit_app.py
 
 4. **Déployer** — l'app sera accessible via une URL publique en 2-3 minutes.
 
----
-
-## 📦 Ajouter de nouveaux documents
-
-```bash
-# 1. Ajouter les PDF dans Data/
-cp nouveaux_docs/*.pdf Data/
-
-# 2. Reconstruire l'index
-python build_index.py
-
-# 3. Commiter les nouveaux artifacts
-git add app/artifacts/
-git commit -m "Update vectorstore with new documents"
-git push
-```
-
-Streamlit Cloud redéploie automatiquement après chaque push.
-
----
-
 ## 🔧 Paramètres avancés
 
 Tout est dans `app/config.py` :
@@ -135,10 +112,7 @@ Tout est dans `app/config.py` :
 | `embed_model` | `intfloat/multilingual-e5-large` | Modèle d'embedding |
 | `retrieval_k` | 10 | Candidats MMR initiaux |
 | `rerank_top_n` | 4 | Docs après reranking |
-| `llm_model` | `gemini-2.0-flash` | Modèle LLM |
+| `llm_model` | `gemini-3.5-flash` | Modèle LLM |
 
 ---
 
-## 📄 Licence
-
-MIT
