@@ -30,7 +30,7 @@ class RAGConfig:
     reranker_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
     # --- LLM ---
-    llm_model: str = "gemini-2.0-flash"
+    llm_model: str = "gemini-3.5-flash"
     llm_temperature: float = 0.0
     llm_max_tokens: int = 1024
 
